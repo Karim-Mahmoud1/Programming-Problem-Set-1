@@ -1,0 +1,33 @@
+# Color Match - Pygame Final Project
+
+**Student Name: Karim Mahmoud**  
+**Matriculation Number: 100007499**
+
+# The Game Concept
+Color Match is a simple game where the player controls an orb at the bottom of the screen with colord orbs constantly falling
+from the top of the screen to collide with the player's orb. The player must make sure they press the correct key to match
+the color of each orb. The game ends when the player collides with an orb while having the wrong color.
+
+# How to Play & Controls
+* **A** - Change player color to **Red**
+* **S** - Change player color to **Green**
+* **D** - Change player color to **Blue**
+* **SPACEBAR** - Restart the game after a Game Over
+
+# How to Run the Game
+1. Ensure you have Python installed on your computer.
+2. (Optional but recommended) Create and activate a clean virtual environment.
+3. Install the Pygame library by opening your terminal/command prompt and running:
+   `pip install pygame`
+4. Run the game script:
+   `python Color-Match.py`
+
+# Classes Implemented
+The game is built using the following 5 custom classes:
+
+1. **Background**: Handles the rendering of the game's environment, including the dark background and the central lane line.
+2. **Player**: Manages the player's orb, its position, and the logic for switching colors based on keyboard input.
+3. **Block**: Manages the falling enemy objects, the randomized spawn colors, their downward movement math, and drawing their shapes.
+4. **ScoreBoard**: Handles the Pygame font rendering to display the player's live score and the "Game Over" messaging.
+5. **Game**: The main game engine class. It initializes Pygame, manages the main game loop, handles collision detection, 
+accelerates the game difficulty,and ties all other classes together.
